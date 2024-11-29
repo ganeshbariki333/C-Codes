@@ -1,18 +1,16 @@
 #include <stdio.h>
-int oddeven();
-int main() {
-oddeven();
+int evenodd(int);
+int main()
+{int e,n;
+printf("enter a number\n");
+scanf("%d",&n);
+e = evenodd(n);
 }
 
-int oddeven() {
-int e;
-printf("enter the number to check even or odd: ");
-scanf("%d", &e);
-if(e%2==0)
-{
-printf("the number is even\n ");
-} else {
-printf("the number is odd \n");
-}
+int evenodd(int n)
+{if(n%2 == 0)
+{printf("even\n");
+}else
+printf("odd\n");
 }
 
